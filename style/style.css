@@ -79,6 +79,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 #price span {
@@ -94,6 +95,25 @@ body {
     text-decoration: line-through;
     font-family: var(--font-montserrat);
     color: var(--Dark-grayish-blue);
+}
+
+#submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 53px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#submit-button span {
+    margin-left: 7px;
 }
 
 .attribution { 
