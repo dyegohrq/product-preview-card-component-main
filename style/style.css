@@ -114,8 +114,8 @@ body {
     border: none;
     background-color: var(--Dark-cyan);
     color: white;
-    font-family: inherit;
-    font-weight: 600;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
     cursor: pointer;
     transition: .8s;
 }
@@ -162,21 +162,20 @@ body {
 
 @media screen and (min-width: 1000px) {
     body {
-        width: 653px;
+        width: 580px;
         min-height: 100vh;
     }
 
-    .img {
-        display: block;
+    #main-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img img{
         width: 50%;
         height: 100%;
         float: left;
-        background-size: cover;
-    }
-
-    .img img {
         border-radius: 10px 0px 0px 10px;
-        
     }
 
     .container {
@@ -184,5 +183,22 @@ body {
         width: 50%;
         height: 100%;
         float: right;
+        padding: 25px;
     }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    #price {
+        font-size: 10px;
+        margin: 25px 0px;
+    }
+
+    #price small {
+        left: 62% ;
+        top: 28%;
+        font-size: 13px;
+    }
+
 }
