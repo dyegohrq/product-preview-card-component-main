@@ -1,0 +1,104 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    /* ### Neutral */
+    
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+/* general config */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Typography */
+.overline {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+}
+
+/* container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Left */
+.container .left .img-perfume {
+    background: url(../images/image-product-mobile.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 240px;
+}
+
+/* Right */
+.container .right h2,.container .right p {
+    color: var(--Dark-grayish-blue);
+}
+
+.container .right h1 {
+    color: var(--Very-dark-blue);
+}
+
+.container .right .price .fist-price {
+    color: var(--Dark-cyan);
+}
+
+.container .right .price .small {
+    font-family: "Montserrat", serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: line-through;
+    line-height: 23px;
+    letter-spacing: 0;   
+    color: var(--Dark-grayish-blue); 
+}
