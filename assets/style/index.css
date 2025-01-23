@@ -173,4 +173,9 @@ a {
 
 .attribution a { 
     color: var(--Dark-cyan); 
+    transition: color .5s ease-in-out;
+}
+
+.attribution a:hover {
+    color: #1a4032;
 }
